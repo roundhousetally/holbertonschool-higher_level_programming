@@ -2,7 +2,6 @@
 import sys
 if __name__ == "__main__":
     i = 1
-    c = 1
     lens = len(sys.argv)
     for i in range(lens):
         if (lens == 1):
