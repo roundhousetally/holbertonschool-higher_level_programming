@@ -3,11 +3,11 @@ if __name__ == "__main__":
     import calculator_1 as calc
     from sys import argv
     lens = len(argv)
-    listo = ['+', '-', '*', '/']
+    listo = '+-*/'
     if lens == 0 or lens < 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    elif argv[2] not in listo:
+    elif (argv[2] not in listo):
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     else:
@@ -15,11 +15,11 @@ if __name__ == "__main__":
             print("{} + {} = {}".format(
                 argv[1], argv[3], calc.add(int(argv[1]), int(argv[3]))))
         elif argv[2] == '-':
-            print("{:d} - {:d} = {}".format(
+            print("{} - {} = {}".format(
                 argv[1], argv[3], calc.sub(int(argv[1]), int(argv[3]))))
-        elif argv[2] == '*':
-            print("{:d} * {:d} = {}".format(
+        elif argv[2] == "*":
+            print("{} * {} = {}".format(
                 argv[1], argv[3], calc.mul(int(argv[1]), int(argv[3]))))
         elif argv[2] == '/':
-            print("{:d} / {:d} = {}".format(
+            print("{} / {} = {}".format(
                 argv[1], argv[3], calc.div(int(argv[1]), int(argv[3]))))
