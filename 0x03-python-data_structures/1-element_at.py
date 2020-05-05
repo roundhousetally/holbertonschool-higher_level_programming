@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
     i = idx + 1
+    if (my_list == '\0'):
+        return (None)
     if i < 0:
         return (None)
     if (i > (len(my_list))):
