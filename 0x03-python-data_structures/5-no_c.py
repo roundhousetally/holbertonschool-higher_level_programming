@@ -1,4 +1,4 @@
-#!/ussr/bin/python3
+#!/usr/bin/python3
 def no_c(mystring):
     if (mystring):
         for i in range((len(mystring))):
