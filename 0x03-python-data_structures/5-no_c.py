@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-def no_c(mystring):
-    if (mystring):
-        for i in range((len(mystring))):
-            mystring = mystring.translate({ord(i): None for i in 'Cc'})
-        return (mystring)
+def no_c(my_string):
+    mistring = ''
+    if (my_string):
+        for i in my_string:
+            mistring = my_string.translate({ord(i): None for i in 'Cc'})
+        return (mistring)
