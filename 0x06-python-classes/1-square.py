@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" This is where the docstring goes """
+
+
 class Square:
     """ square """
     def __init__(self, size):
