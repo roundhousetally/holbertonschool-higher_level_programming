@@ -8,10 +8,9 @@ class Square:
         """ private attribute
         Args:
              size - size of square
-             position - coordinates of a square
-        """
-        self.__size = size
-        self.__position = position
+             position - coordinates of a square        """
+        self.size = size
+        self.position = position
 
     def area(self):
         """ area """
@@ -52,4 +51,8 @@ class Square:
         """ sets the coord position of square """
         if not isinstance(value, tuple) or value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
+
+        elif len(value) > 2 or type(value[0]) != int or type(value[1]) != int:
+            raise TypeError("position must be a tuple of 2 positive integers")
+
         self.__position = value
