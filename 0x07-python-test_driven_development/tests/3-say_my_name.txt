@@ -1,0 +1,34 @@
+The ``say_my_name`` module
+==========================
+
+Testing ``say_my_name`` Use:
+----------------------------
+
+# import module:
+       >>> sn = __import__('3-say_my_name').say_my_name
+
+# Now say my name:
+       >>> sn("Tahlia", "Roper")
+       My name is Tahlia Roper
+
+# But only if its a string:
+       >>> sn(454, "Rop")
+       Traceback (most recent call last):
+       ...
+       TypeError: first_name must be a string
+
+# First name only is fine:
+       >>> sn("Tahlia")
+       My name is Tahlia 
+
+# Last name also has to be a string:
+       >>> sn("Tahlia", 34)
+       Traceback (most recent call last):
+       ...
+       TypeError: last_name must be a string
+
+# First name must be provided
+       >>> sn()
+       Traceback (most recent call last):
+       ...
+       TypeError: say_my_name() missing 1 required positional argument: 'first_name'
