@@ -1,0 +1,51 @@
+The ``text_indentation`` mod
+============================
+
+Testing ``text_indentation`` Use:
+---------------------------------
+
+# import module:
+  	 >>> ti = __import__('5-text_indentation').text_indentation
+
+# Normal Use:
+
+  	 >>> ti(".??..?as?sdsf?")
+	 .
+	 <BLANKLINE>
+	 ?
+	 <BLANKLINE>
+	 ?
+	 <BLANKLINE>
+	 .
+	 <BLANKLINE>
+	 .
+	 <BLANKLINE>
+	 ?
+	 <BLANKLINE>
+	 as?
+	 <BLANKLINE>
+	 sdsf?
+	 <BLANKLINE>
+
+# Improper Use Cases
+
+# No string
+
+ >>> ti()
+ Traceback (most recent call last):
+ ...
+ TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+# Non String
+
+ >>> ti(None)
+ Traceback (most recent call last):
+ ...
+ TypeError: text must be a string
+
+# More than one argument
+
+ >>> ti("heythere", "Another Argument")
+ Traceback (most recent call last):
+ ...
+ TypeError: text_indentation() takes 1 positional argument but 2 were given
