@@ -1,0 +1,35 @@
+The ``my_list`` module
+======================
+
+Testing ``my_list`` Use:
+------------------------
+
+import module:
+       >>> MyList = __import__('1-my_list').MyList
+
+# TESTS
+# empty append
+
+       >>> my_list = MyList()
+       >>> my_list.append()
+       Traceback (most recent call last):
+       ...
+       TypeError: append() takes exactly one argument (0 given)
+
+# letter append
+       >>> my_list.append(f)
+       Traceback (most recent call last):
+       ...
+       NameError: name 'f' is not defined
+
+# negatives
+  >>> my_list.append(-1)
+  >>> my_list.append(-8)
+  >>> my_list.append(6)
+  >>> my_list.append(3444)
+  >>> print(my_list)
+  [-1, -8, 6, 3444]
+  >>> my_list.print_sorted()
+  [-8, -1, 6, 3444]
+  >>> print(my_list)
+  [-1, -8, 6, 3444]
