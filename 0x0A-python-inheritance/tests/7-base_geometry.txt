@@ -1,0 +1,35 @@
+The ``BaseGeometry`` module
+===========================
+
+Testing ``BaseGeometry`` Use:
+-----------------------------
+Import Module:
+       >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+       >>> bg = BaseGeometry()
+
+# Normal use, no return
+       >>> bg.integer_validator("an int", 12)
+
+# Negative num use
+       >>> bg.integer_validator("an int", -12)
+       Traceback (most recent call last):
+       ...
+       ...
+       ...
+       ValueError: an int must be greater than 0
+
+# Boolean use
+       >>> bg.integer_validator("an int", True)
+       Traceback (most recent call last):
+       ...
+       ...
+       ...
+       TypeError: an int must be an integer
+
+# One arg
+       >>> bg.integer_validator("an int")
+       Traceback (most recent call last):
+       ...
+       ...
+       ...
+       TypeError: integer_validator() missing 1 required positional argument: 'value'
