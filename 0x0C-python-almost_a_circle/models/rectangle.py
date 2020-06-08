@@ -29,6 +29,12 @@ class Rectangle(Base):
         except IndexError:
             pass
 
+    def to_dictionary(self):
+        """ dict rep of rectangle """
+        newdict = {"id": self.id, "height": self.height,
+                   "width": self.width, "x": self.x, "y": self.y}
+        return newdict
+
     @property
     def x(self):
         """ x """
