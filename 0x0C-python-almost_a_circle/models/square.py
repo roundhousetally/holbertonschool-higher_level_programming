@@ -28,6 +28,11 @@ class Square(Rectangle):
         self.width = size
         self.height = size
 
+    def to_dictionary(self):
+        """ returns dict rep of sqaure """
+        newdict = {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
+        return newdict
+
     def update(self, *args, **kwargs):
         """ updates args to attrs """
         i = 0
