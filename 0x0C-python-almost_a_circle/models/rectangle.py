@@ -13,6 +13,22 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def update(self, *args, **kwargs):
+        """ updates args to attributes """
+        i = 0
+        arglist = ["id", "width", "height", "x", "y"]
+        try:
+            if args:
+                for arg in args:
+                    setattr(self, arglist[i], arg)
+                    i += 1
+            else:
+                for key, value in kwargs.items():
+                    setattr(self, key, value)
+
+        except IndexError:
+            pass
+
     @property
     def x(self):
         """ x """
@@ -77,12 +93,15 @@ class Rectangle(Base):
         """ display rectangle """
         b = ""
         if self.__width is 0 or self.__height is 0:
-            return (b)
+            return
+        for i in range(self.__y):
+            print("")
         for i in range(self.__height):
-            b += "#" * self.__width
-            if i < (self.__height - 1):
-                b += "\n"
-        print(b)
+            for y in range(self.__x):
+                print(" ", end="")
+            for y in range(self.__width):
+                print("#", end="")
+            print()
 
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format
