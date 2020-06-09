@@ -34,3 +34,6 @@ class TestRectangle(unittest.TestCase):
 
     def test_y(self):
         """ test y """
+
+    if __name__ == '__main__':
+        unittest.main()
