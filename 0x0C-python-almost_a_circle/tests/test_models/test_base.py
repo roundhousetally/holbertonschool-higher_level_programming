@@ -32,3 +32,6 @@ class TestBase(unittest.TestCase):
 
     def test_save_to_file(self):
         """ tests save to file """
+
+    if __name__ == '__main__':
+        unittest.main()
