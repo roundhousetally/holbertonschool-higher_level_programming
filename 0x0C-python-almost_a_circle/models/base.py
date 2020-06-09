@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ base module """
+import json
 
 
 class Base:
@@ -19,5 +20,23 @@ class Base:
         if list_dictionaries is None:
             return "[]"
         else:
-            import json
             return (json.dumps(list_dictionaries))
+
+    def from_json_string(json_string):
+        """ returns the list from the JSON string rep """
+        if json_string is None:
+            return "[]"
+        else:
+            return (json.loads(json_string))
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """ writes json str rep to file """
+        fn = cls.__name__ + ".json"
+        strlist = []
+        with open(fn, "w") as f:
+            if list_objs is None:
+                f.write("[]")
+            else:
+                strlist = [i.to_dictionary() for i in list_objs]
+                f.write(Base.to_json_string(strlist))
