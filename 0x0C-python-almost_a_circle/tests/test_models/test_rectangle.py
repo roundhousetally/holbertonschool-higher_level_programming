@@ -8,14 +8,20 @@ from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     """ test cases for Rectangle class """
-    def test_id(self):
-        """ test id """
-
-    def test_height(self):
-        """ test height """
+    def test_argless(self):
+        """ test no args """
+        with self.assertRaises(TypeError):
+            Rectangle()
 
     def test_width(self):
+        """ test height """
+        with self.assertRaises(AttributeError):
+            print(Rectangle(1, 2, 3, 4).__width)
+
+    def test_height(self):
         """ test width """
+        with self.assertRaises(AttributeError):
+            print(Rectangle(1, 2, 3, 4).__height)
 
     def test_area(self):
         """ test area """

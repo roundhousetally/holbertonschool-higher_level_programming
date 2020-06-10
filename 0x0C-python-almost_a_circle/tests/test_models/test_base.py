@@ -28,7 +28,6 @@ class TestBase(unittest.TestCase):
 
     def test_from_json(self):
         """ tests from json method """
-        
 
     def test_save_to_file(self):
         """ tests save to file """
