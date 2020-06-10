@@ -3,6 +3,9 @@
 
 
 import unittest
+import json
+import sys
+import pep8
 from models.base import Base
 
 
@@ -32,5 +35,15 @@ class TestBase(unittest.TestCase):
     def test_save_to_file(self):
         """ tests save to file """
 
-    if __name__ == '__main__':
-        unittest.main()
+
+class TestBaseFormat(unittest.TestCase):
+    """ test the pep8 format """
+    def test_pep8(self):
+        """ test that its pep8 ok """
+        pstyle = pep8.StyleGuide(quiet=True)
+        res = pstyle.check_files(['models/base.py', 'models/rectangle.py',
+                                     'models/square.py'])
+        self.assertEqual(res.total_errors, 0, "Found code style errors (and warnings).")
+
+if __name__ == "__main__":
+    unittest.main()
