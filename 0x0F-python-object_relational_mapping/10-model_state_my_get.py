@@ -13,7 +13,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     sesh = Session()
-    statesearch = sesh.query(State).filter(State.name == argv[4]).first()
+    injectfree = argv[4]
+    statesearch = sesh.query(State).filter(State.name == injectfree).first()
+
     if statesearch is None:
         print("Not Found")
     else:
