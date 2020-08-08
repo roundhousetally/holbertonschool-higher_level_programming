@@ -13,8 +13,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     sesh = Session()
-    statesearch = sesh.query(State.id, State.name)\
-                      .filter(State.name == argv[4]).order_by(State.id).first()
+    statesearch = sesh.query(State).filter(State.name == argv[4]).first()
     if statesearch is None:
         print("Not Found")
     else:
