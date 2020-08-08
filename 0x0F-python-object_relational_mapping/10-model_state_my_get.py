@@ -14,7 +14,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     sesh = Session()
     injectfree = argv[4]
-    statesearch = sesh.query(State).filter(State.name == injectfree).first()
+    statesearch = sesh.query(State).filter_by(name=injectfree).first()
 
     if statesearch is None:
         print("Not Found")
