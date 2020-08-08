@@ -14,10 +14,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     sesh = Session()
     injectfree = argv[4]
-    statesearch = sesh.query(State).filter_by(name=injectfree).first()
+    states = sesh.query(State).filter_by(name=injectfree).first()
 
-    if statesearch is None:
+    if states is None:
         print("Not Found")
     else:
-        print("{}".format(statesearch.id))
+        print("{}".format(states.id))
     sesh.close()
