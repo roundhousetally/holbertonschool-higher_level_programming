@@ -1,3 +1,3 @@
 #!/bin/bash
-# gets just the status code
-curl -sH "Content-Type: application/json" "$1"
+# json 
+curl -sH "Content-Type: application/json" "$1" -X POST "$2"
