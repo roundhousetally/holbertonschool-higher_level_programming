@@ -7,8 +7,8 @@ import urllib.request as r
 
 if __name__ == "__main__":
     web = argv[1]
-    form = {'email': argv[2]}
+    form = {"email": argv[2]}
     data = p.urlencode(form).encode("ascii")
     req = r.Request(web, data)
     with r.urlopen(req) as resp:
-        print(resp.read().decode("uft-8"))
+        print(resp.read().decode("utf-8"))
