@@ -10,7 +10,8 @@ if __name__ == "__main__":
     else:
         l = argv[1]
     f = {"q": l}
-    req = requests.post("http://0.0.0.0:5000/search_user", data=f)
+    web = "http://0.0.0.0:5000/search_user"
+    req = requests.post(web, data=f)
     try:
         r = req.json()
         if r == {}:
