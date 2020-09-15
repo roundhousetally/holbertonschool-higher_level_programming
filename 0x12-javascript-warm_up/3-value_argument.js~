@@ -1,0 +1,7 @@
+#!/usr/bin/node
+if(arguments[4]){
+    console.log(arguments[4]);
+}
+    else{
+    console.log('No argument');
+}
