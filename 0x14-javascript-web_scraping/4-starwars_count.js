@@ -7,11 +7,10 @@ request(url, function (err, response, body) {
   } else {
     const films = JSON.parse(body).results;
     let count = 0;
-    let f = 0;
-    let c = 0;
-    for (f; f < films.length; f++) {
-      for (c; c < films[f].characters.length; c++) {
-        if (films[f].characters[c].includes('18')) {
+    for (const i in films) {
+      const characters = films[i].characters;
+      for (const c in characters) {
+        if (characters[c].includes('18')) {
           count++;
         }
       }
