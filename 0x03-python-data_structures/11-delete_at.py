@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" function that deletes item at specified index """
+
+
 def delete_at(my_list=[], idx=0):
     lt = len(my_list)
     for i in range(lt):

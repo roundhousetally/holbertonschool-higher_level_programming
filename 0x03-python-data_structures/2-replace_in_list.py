@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" find element at index and replaces it """
+
+
 def replace_in_list(my_list, idx, element):
     i = 0
     t = idx

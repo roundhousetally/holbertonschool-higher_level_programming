@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" replaces element in list without modifying original list """
+
+
 def new_in_list(my_list, idx, element):
     t = idx
     lt = len(my_list)

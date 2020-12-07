@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" function that returns a tuple with the length of the string and its first char """
+
+
 def multiple_returns(sentence):
     i = 0
     strl = len(sentence)

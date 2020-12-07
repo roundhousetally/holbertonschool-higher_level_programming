@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" function that adds two tuples """
+
+
 def add_tuple(tuple_a=(), tuple_b=()):
     tuplena = len(tuple_a)
     tuplenb = len(tuple_b)
