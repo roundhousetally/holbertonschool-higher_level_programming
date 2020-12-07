@@ -1,4 +1,5 @@
 # Python - Hello World
+## Project covering Python basics
 
 ### Task 0 - Shell script that runs a python script.
 
@@ -9,10 +10,10 @@
 ### Task 3 - Completed source code to print an integer stored in a variable.
 
 ### Task 4 - Completed source code to print a float stored ina variable to 2
-digit precision.
+### digit precision.
 
 ### Task 5 - Completed source code to print 3 x a string stored in a variable
-followed by its first 9 chars.
+### followed by its first 9 chars.
 
 ### Task 6 - Completed source code to print a string
 
