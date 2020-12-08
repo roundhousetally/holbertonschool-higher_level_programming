@@ -1,5 +1,2 @@
 # Python - Everything is object
-
-### Tasks-
-
-#### Answering questions about python
+## Project with questions about python
