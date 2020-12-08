@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" Say my name, say my name, if no one is around you
-say baby I love you, if you ain't running game.
-That is destiny's child, however this mod just prints a name """
+""" mod just prints a name """
 
 
 def say_my_name(first_name, last_name=""):
