@@ -1,5 +1,6 @@
 # Higher Level Programming
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1920px-Python_logo_and_wordmark.svg.png" align="center">
+
 ## This repo contains higher-level programming projects for the Foundations Curriculum at Holberton.
 ### These projects are my first experiences in working with Object Oriented Programming. Through this repo I have learned that in Python, everything is object.
 # About the Developer:
