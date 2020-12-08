@@ -1,4 +1,4 @@
-# Python - Classes and Objects
+# 0x06. Python - Classes and Objects
 
 ### 0 - Empty class Square that defines a square.
 
