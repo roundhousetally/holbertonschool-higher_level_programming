@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" replaces or adds key/value in a dict """
+
+
 def update_dictionary(a_dictionary, key, value):
     a = key
     b = value
