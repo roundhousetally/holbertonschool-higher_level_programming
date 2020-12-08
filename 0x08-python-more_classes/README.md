@@ -1,10 +1,10 @@
 # Python - More Classes and Objects
 
-### Task 0 - Simple Rectangle
+### Task 0 - Simple rectangle
 
-### Task 1 - Real Definition of a Rectangle
+### Task 1 - Real definition of a rectangle
 
-### Task 2 - Area and Perimeter
+### Task 2 - Area and perimeter
 
 ### Task 3 - String representation
 
@@ -14,9 +14,9 @@
 
 ### Task 6 - How many instances
 
-### Task 7 - Change Representation
+### Task 7 - Change representation
 
-### Task 8 - Compare Rectangles
+### Task 8 - Compare rectangles
 
 ### Task 9 - A square is a rectangle
 
