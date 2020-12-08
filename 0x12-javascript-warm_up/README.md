@@ -1,3 +1,3 @@
-# 0.12. Javascript - Warm up
+# 0x12-Javascript - Warm up
 
-### Task 0 - Script that prints `Javascript is amazing`
+## Project to get exposure to Javascript
